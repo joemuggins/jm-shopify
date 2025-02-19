@@ -1,0 +1,57 @@
+.custom-text-input {
+  margin-bottom: 1rem;
+}
+.custom-text-input label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.custom-text-field {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.custom-input-container {
+  margin-bottom: 1rem;
+}
+
+.custom-checkbox-label {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.custom-checkbox-input {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+.custom-checkbox-slider {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 20px;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.custom-checkbox-slider::before {
+  content: "";
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.custom-checkbox-input:checked + .custom-checkbox-slider::before {
+  transform: translateX(20px);
+}
